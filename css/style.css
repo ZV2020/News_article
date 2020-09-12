@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 header {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     height: 400px;
     background-color: lightgray;
-    background: url(https://images.unsplash.com/photo-1566194191858-755be57fdc3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) 
-    top no-repeat;
+    background: url(https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80) 
+    bottom no-repeat;
     background-size: cover;
 }
 
 body {
     margin: 0;
     padding: 0;
+
 }
 
 h1 {
@@ -20,8 +23,12 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+p {
+    font-family: 'Merriweather', serif; 
+}
+
 .news {
-    background-color: #fff;
+    background-color: rgb(197, 202, 206);
     padding: 50px 0 32px;    
 }
 
@@ -31,6 +38,17 @@ article {
     padding: 6px 15px;
     border-bottom: 1px solid rgb(128, 128, 128);
 }
+
+.new::after {
+    content: "New";
+    color: red;
+    font-size: 0.5em;
+    vertical-align: top;
+}
+
+article:nth-of-type(even) {
+    background: lightgray;
+  }
 
 article a {
     color: rgb(33, 37, 41);
